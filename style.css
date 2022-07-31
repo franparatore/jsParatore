@@ -1,0 +1,47 @@
+* {
+    font-family: openSansCustom;
+    background-color: darkgray;
+}
+
+body {
+   text-align: -webkit-center;
+}
+
+#formulario {
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 260px;
+    height: 205px 5px;
+    background-color: burlywood;
+}
+
+#formulario label{
+    background-color: burlywood;
+}
+
+.iText{
+    background-color:whitesmoke;
+}
+
+#botones{
+    background-color: burlywood
+}
+
+#btnSubmit, #btnMostrar{
+    margin-top: 25px;
+    width: 99px;
+    height: 30px;
+}
+
+#containerPrincipal {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#displayTodos, #displayTodos p, #displayTodos strong, #displayTodos h3 {
+    background-color: burlywood;
+    margin: 5px;
+}
