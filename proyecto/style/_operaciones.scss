@@ -1,0 +1,55 @@
+/*mapas*/
+
+$redes:( 
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #C25E30, 
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+        margin: 5px;
+    }
+
+}
+
+/*extend*/
+
+.redSocial {
+    border:1px solid rgb(36, 0, 168);
+    background-color: rgb(112, 105, 63);
+    margin: 5px;
+}
+
+.redsocial--social {
+    @extend.redSocial;
+    border-radius: 10px;
+}
+
+.redsocial--nueva {
+    @extend.redSocial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.redsocial--mark {
+    @extend.redSocial;
+    border: 3px dashed blue;
+    
+}
+
+/*mixin*/
+
+@mixin sizes ($width, $height) {
+          height: $height;
+          width: $width;
+ 
+}
+
+.my_mixin {
+    @include sizes (360px, 50px);
+    background-color: lightcoral;
+    border: solid blue 2px;
+    text-align: center;
+}
