@@ -1,3 +1,9 @@
+
+swal("Bienvenido a nuestro shoping digital", {
+    buttons: false,
+    timer: 2000,
+  });
+
 document.addEventListener('DOMContentLoaded', () => {
 
             
@@ -59,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             ];
 
+            
+
             let carrito = [];
             const divisa = '$';
             const DOMitems = document.querySelector('#items');
@@ -113,6 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarCarrito();
                 
                 guardarCarritoEnLocalStorage();
+
+                swal({
+
+                    title:"Producto añadido correctamente.",
+                    text: "Presione OK para continuar",
+                    icon: "success",
+                }
+                );
             }
 
           
